@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HM\\Source\\Repos\\ASP.NET-Templates\\E-Commerce-Template\\E-Commerce-Template\\E-Commerce-Template.csproj": {}
+    "C:\\Users\\HM\\source\\repos\\ASP.NET-Templates\\E-Commerce-Template\\E-Commerce-Template\\E-Commerce-Template.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HM\\Source\\Repos\\ASP.NET-Templates\\E-Commerce-Template\\E-Commerce-Template\\E-Commerce-Template.csproj": {
+    "C:\\Users\\HM\\source\\repos\\ASP.NET-Templates\\E-Commerce-Template\\E-Commerce-Template\\E-Commerce-Template.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HM\\Source\\Repos\\ASP.NET-Templates\\E-Commerce-Template\\E-Commerce-Template\\E-Commerce-Template.csproj",
+        "projectUniqueName": "C:\\Users\\HM\\source\\repos\\ASP.NET-Templates\\E-Commerce-Template\\E-Commerce-Template\\E-Commerce-Template.csproj",
         "projectName": "E-Commerce-Template",
-        "projectPath": "C:\\Users\\HM\\Source\\Repos\\ASP.NET-Templates\\E-Commerce-Template\\E-Commerce-Template\\E-Commerce-Template.csproj",
+        "projectPath": "C:\\Users\\HM\\source\\repos\\ASP.NET-Templates\\E-Commerce-Template\\E-Commerce-Template\\E-Commerce-Template.csproj",
         "packagesPath": "C:\\Users\\HM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HM\\Source\\Repos\\ASP.NET-Templates\\E-Commerce-Template\\E-Commerce-Template\\obj\\",
+        "outputPath": "C:\\Users\\HM\\source\\repos\\ASP.NET-Templates\\E-Commerce-Template\\E-Commerce-Template\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HM\\AppData\\Roaming\\NuGet\\NuGet.Config",
