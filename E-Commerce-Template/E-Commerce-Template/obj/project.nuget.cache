@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IYM9k85WTEBl8/V9Ekz7dF9H95uxClM1DB1CpMH1Ne7yy6FN3oQJ47oh+k7CHa9uCWFcdxvZYERrdsE83rJ+vA==",
+  "dgSpecHash": "9YO3NMSU3FCVbxJEleT/hCS0WCQOG49AbaG+HQBqSIs02Glu7cM5f7wUVWtd9D3xmTS/E103irhxIZdZoprinA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HM\\Source\\Repos\\ASP.NET-Templates\\E-Commerce-Template\\E-Commerce-Template\\E-Commerce-Template.csproj",
+  "projectFilePath": "C:\\Users\\HM\\source\\repos\\ASP.NET-Templates\\E-Commerce-Template\\E-Commerce-Template\\E-Commerce-Template.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HM\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\HM\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
