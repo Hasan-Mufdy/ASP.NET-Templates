@@ -263,3 +263,7 @@ C:\Users\HM\Source\Repos\ASP.NET-Templates\E-Commerce-Template\E-Commerce-Templa
 C:\Users\HM\Source\Repos\ASP.NET-Templates\E-Commerce-Template\E-Commerce-Template\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\HM\Source\Repos\ASP.NET-Templates\E-Commerce-Template\E-Commerce-Template\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\HM\Source\Repos\ASP.NET-Templates\E-Commerce-Template\E-Commerce-Template\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\HM\Source\Repos\ASP.NET-Templates\E-Commerce-Template\E-Commerce-Template\bin\Debug\net7.0\Azure.Storage.Blobs.dll
+C:\Users\HM\Source\Repos\ASP.NET-Templates\E-Commerce-Template\E-Commerce-Template\bin\Debug\net7.0\Azure.Storage.Common.dll
+C:\Users\HM\Source\Repos\ASP.NET-Templates\E-Commerce-Template\E-Commerce-Template\bin\Debug\net7.0\Azure.Storage.Files.Shares.dll
+C:\Users\HM\Source\Repos\ASP.NET-Templates\E-Commerce-Template\E-Commerce-Template\bin\Debug\net7.0\System.IO.Hashing.dll

@@ -1,0 +1,40 @@
+﻿@model List<E_Commerce_Template.Models.Product>
+
+<div class="container mt-4">
+    <h1 class="text-center">Products in this Category</h1>
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="row">
+            @foreach (var product in Model)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="@product.ImageUrl" class="card-img-top" alt="@product.Name">
+                        <div class="card-body">
+                            <h5 class="card-title">@product.Name</h5>
+                            <p class="card-text">@product.Description</p>
+                            <p class="card-text">Price: $@product.Price</p>
+                            <p class="card-text">Category ID: @product.CategoryId</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div style="position: fixed; right: 25px; bottom: 25px;" class="text-white">
+            <a asp-controller="Product" asp-action="Create" class="btn btn-success">
+                <i class="bi bi-plus-circle"></i> Add a new product
+            </a>
+        </div>
+    }
+    else
+    {
+        <p>No products available.</p>
+        <div style="position: fixed; right: 25px; bottom: 25px;" class="text-white">
+            <a asp-controller="Product" asp-action="Create" class="btn btn-success">
+                <i class="bi bi-plus-circle"></i> Add New
+            </a>
+        </div>
+    }
+</div>

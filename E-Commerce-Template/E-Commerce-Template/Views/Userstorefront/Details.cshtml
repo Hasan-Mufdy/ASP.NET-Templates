@@ -1,0 +1,81 @@
+﻿@model Product
+
+<div class="container mt-4">
+    <h1>@Model.Name Details</h1>
+
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <form>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="text-center mb-4">
+                    <img src="@Model.ImageUrl" class="img-fluid" alt="@Model.Name" class="img-fluid" alt="Responsive image" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label">Product Name</label>
+                    <input asp-for="Name" class="form-control" readonly />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Description" class="form-label">Description</label>
+                    <input asp-for="Description" class="form-control" readonly />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Price" class="form-label">Price</label>
+                    <input asp-for="Price" class="form-control" readonly />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <a class="btn btn-outline-secondary" asp-action="Index">Show All</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+@* class="img-fluid" alt="Responsive image" *@
+
+
+@* old style *@
+@* @model Product
+
+<div class="row text">
+    <div class="col-md-8 offset-2">
+        <p>
+            <h1>@Model.Name details</h1>
+        </p>
+        <div class="row">
+            <div class="col-md-8 offset-2">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <img src=@Model.Url width="250px"></img>
+
+
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" readonly />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Description" class="control-label"></label>
+                    <input asp-for="Description" class="form-control" readonly />
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Price" class="control-label"></label>
+                    <input asp-for="Price" class="form-control" readonly />
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <a class="btn btn-outline-secondary" asp-action="Index">Show All</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+ *@

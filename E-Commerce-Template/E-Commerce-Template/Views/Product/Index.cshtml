@@ -1,0 +1,55 @@
+﻿@model List<E_Commerce_Template.Models.Product>
+
+<div class="container mt-4">
+    <h1 class="mb-4">Product List</h1>
+
+    @* /////////////////// *@
+
+    <form class="d-flex" asp-controller="Product" asp-action="Index" method="get">
+        <input class="form-control me-2" type="search" placeholder="Search by name" aria-label="Search" name="searchTerm">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    <br>
+    @* /////////////////// *@
+    <div class="row">
+        @foreach (var product in Model)
+        {
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="@product.ImageUrl" class="card-img-top img-fixed-height" alt="@product.Name">
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Name</h5>
+                        <p class="card-text">@product.Description</p>
+                        <p class="card-text">Price: $@product.Price</p>
+                        <p class="card-text">Category ID: @product.CategoryId</p>
+                        <div class="d-grid gap-2">
+                            <a class="btn btn-outline-primary" asp-action="Edit" asp-route-id="@product.Id">
+                                <i class="bi bi-pencil-square"></i> Edit
+                            </a>
+                            <a class="btn btn-outline-info" asp-action="Details" asp-route-id="@product.Id">
+                                <i class="bi bi-eye"></i> Details
+                            </a>
+                            <a class="btn btn-danger text-white" asp-action="Delete" asp-route-id="@product.Id">
+                                <i class="bi bi-trash"></i> Delete
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div style="position: fixed; right: 25px; bottom: 25px;" class="text-white">
+        <a asp-controller="Product" asp-action="Create" class="btn btn-success">
+            <i class="bi bi-plus-circle"></i> Add a new product
+        </a>
+    </div>
+</div>
+
+<style>
+    .img-fixed-height {
+        height: 200px;
+        object-fit: contain;
+        width: 100%;
+    }
+</style>

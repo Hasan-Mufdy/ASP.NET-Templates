@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
 builder.Services.AddDbContext<AppDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -19,6 +20,9 @@ builder.Services.AddIdentity<AuthUser, IdentityRole>(options =>
 }).AddEntityFrameworkStores<AppDbContext>();
 
 builder.Services.AddTransient<IUserService, IdentityUserService>();
+builder.Services.AddTransient<IProduct, ProductService>();
+builder.Services.AddTransient<ICategory, CategoryService>();
+
 
 builder.Services.AddAuthentication();
 builder.Services.AddAuthorization();
